@@ -1,5 +1,9 @@
+//truthy 
 // 'almas', 5, true, {}, []
+
+//false
 // '', 0, false, null, undefined
+
 // check truthy
 let myVar = 5;
 // check any truthy 
@@ -25,7 +29,7 @@ else {
     food = 'cha biscuit';
 }
 
-// ternary
+// ternary*******
 let food1 = money > 100 ? 'biryani' : 'cha biscuit';
 // console.log(food1);
 
