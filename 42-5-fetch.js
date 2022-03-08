@@ -5,10 +5,12 @@ const student = {
     age: 32,
     movies: ['king khan', 'Dhakar Mastan']
 }
+//to convert in JSON
 const studentJSON = JSON.stringify(student);
 // console.log(student);
 // console.log(studentJSON);
 
+//to covert in Object
 const studentObj = JSON.parse(studentJSON);
 // console.log(studentObj);
 
@@ -47,3 +49,4 @@ const newProducts = [...products, newProduct];
 // create a new array without one specific item 
 // remove phone means create a new array without the phone
 const remaining = products.filter(p => p.name !== 'phone');
+console.log(remaining);
