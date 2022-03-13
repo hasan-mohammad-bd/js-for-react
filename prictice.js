@@ -138,3 +138,15 @@ console.log(typeof numToString);
 const string = "23";
 const converted = +string;
 console.log(typeof converted);
+
+let isActive = true;
+const showUser = () => console.log('display User');
+const hideUser = () => console.log('hide User');
+// isActive ? showUser() : hideUser();
+// use && if the left side is true then right side will be executed
+isActive && showUser();
+// use || if the left side is false then right side will be executed
+isActive || hideUser();
+
+// toggle boolean
+isActive = !isActive;
