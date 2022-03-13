@@ -6,4 +6,7 @@ const student = {
     movies: ['king khan', 'Dhakar Mastan']
 }
 
+const theAge = "age";
 console.log(student.age);
+console.log(student["age"]);
+console.log(student[theAge]);
