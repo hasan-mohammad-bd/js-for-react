@@ -90,12 +90,38 @@ const employee = {
       watch: {
         color: "black",
         price: 500,
-        brand: "garmin",
+        brand: null
       },
     },
   };
 
-  const {color, price, brand} = employee.specification.watch;
+  const {color, price, brand} = employee?.specification.watch;
   console.log(color);
 
   //optional chining.
+  console.log(brand);
+
+  //converting data to stringify
+
+  const student22 = {
+      name: "Sakib khan",
+      age: 32,
+      movies: ["king khan", "dhakar mastan"]
+  }
+
+  //to convert in json.
+
+  const studentJSON = JSON.stringify(student22);
+  console.log(studentJSON);
+  
+//   convert to Object
+
+const toObject = JSON.parse(studentJSON);
+console.log(toObject);
+
+//object key and value.
+//==============================================
+const key = Object.keys(student22);
+const value = Object.values(student22);
+console.log(key);
+console.log(value);
