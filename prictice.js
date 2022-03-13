@@ -125,3 +125,16 @@ const key = Object.keys(student22);
 const value = Object.values(student22);
 console.log(key);
 console.log(value);
+
+//number to sting convert 
+//==============================================
+
+const num1 = 53;
+const numToString = num1 + "";
+console.log(typeof numToString);
+
+//string to number
+//==============================================
+const string = "23";
+const converted = +string;
+console.log(typeof converted);
