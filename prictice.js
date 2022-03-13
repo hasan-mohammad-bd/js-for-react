@@ -50,7 +50,6 @@ const products = [
 
 //map: go through all array property 
 //============================================
-
 const brands = products.map(product => product.brand)
 console.log(brands);
 
@@ -58,3 +57,14 @@ console.log(brands);
 //============================================
 const lowPriceItems = products.filter(product => product.price < 2000)
 console.log(lowPriceItems);
+
+
+//forEach. its like map but dont give an array output.
+//============================================
+const productsPrice = products.forEach(product => {
+    console.log(product.price)});
+
+//find: find is find only one result from an array.
+
+const special = products.find(p => p.name.includes("n"));
+console.log(special);
