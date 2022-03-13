@@ -32,3 +32,8 @@ console.log(about);
 //============================================
 const getFiftyFive = () => 55;
 console.log(getFiftyFive());
+
+//spread operator
+const newNumbers = [...numbers]
+const currentNumbers = [...numbers, 55];
+console.log(currentNumbers);
